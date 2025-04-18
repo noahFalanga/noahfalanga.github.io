@@ -2,9 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hello World</title>
+    <title>Test</title>
+    <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+<df-messenger
+  location="us-central1"
+  project-id="upbeat-flame-415600"
+  agent-id="646322a3-c715-4f3e-ab49-b0daa31982d0"
+  language-code="en"
+  max-query-length="-1">
+  <df-messenger-chat-bubble
+    chat-title="Cincy Bot">
+  </df-messenger-chat-bubble>
+</df-messenger>
+<style>
+  df-messenger {
+    z-index: 999;
+    position: fixed;
+    --df-messenger-font-color: #000;
+    --df-messenger-font-family: Google Sans;
+    --df-messenger-chat-background: #f3f6fc;
+    --df-messenger-message-user-background: #d3e3fd;
+    --df-messenger-message-bot-background: #fff;
+    bottom: 16px;
+    right: 16px;
+  }
+</style>
 </head>
 <body>
-
+<p>Welcome to Noah's chatbot; you can interact with it in the lower right corner.
+Be aware that there is a slight bug on dialogflow's part; after saying hello, clarify what your name is
+and what your email address is; if you do not do this, the program may, for whatever reason,
+not switch its intent and continue the flow. You may also have to copy-paste it multiple times.</p>
 </body>
 </html>
